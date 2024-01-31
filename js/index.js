@@ -2,7 +2,7 @@ const main = document.querySelector("main");
 const header = document.querySelector("header");
 const navbar = document.querySelector("nav");
 const banner = document.getElementById("banner-image");
-const displays = document.querySelectorAll(".zoomist-container-display");
+const navReplacer = document.getElementById("navReplacer");
 
 const zoomist = new Zoomist(".zoomist-container-banner", {
   maxScale: 1.5,
@@ -37,14 +37,19 @@ function onScroll(e) {
   if (yOffset > 70) {
     fixed = true;
     navbar.classList.add("locked");
-    main.style.paddingTop = "50px";
+    navReplacer.style.paddingTop = "50px";
   } else if (yOffset <= 25) {
     fixed = false;
     navbar.classList.remove("locked");
-    main.style.paddingTop = "0px";
+    navReplacer.style.paddingTop = "0px";
     navbar.style.position = "initial";
   }
 }
+
+var ambient = new Ambient({ blur: -1, retainAttributes: true });
+ambient.mount();
+
+const displays = document.querySelectorAll(".zoomist-container-display");
 
 for (const display of displays) {
   console.log(display);
@@ -57,9 +62,6 @@ for (const display of displays) {
     zoomer: true,
   });
 }
-
-var ambient = new Ambient({ blur: -1, retainAttributes: true });
-ambient.mount();
 
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here

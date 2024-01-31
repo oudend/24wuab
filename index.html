@@ -23,6 +23,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="css/libs/zoomist.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="js/libs/lazyload.min.js"></script>
@@ -50,8 +51,7 @@
           id="github-icon"
         ></object>
       </nav>
-    </header>
-    <main class="scrollbar-hidden">
+      <div id="navReplacer"></div>
       <div id="banner">
         <div class="zoomist-container-banner noselect">
           <div class="zoomist-wrapper">
@@ -72,26 +72,15 @@
           <p>Programmer and 3D artist</p>
         </div>
       </div>
+    </header>
+    <main class="scrollbar-hidden">
+      <!-- data-ambient-zoomist -->
       <div class="zoomist-container-display noselect">
         <div class="zoomist-wrapper">
           <div class="zoomist-image">
             <img
               alt="Brick"
-              src="img/renders/brick.png"
-              class="display-image"
-              draggable="false"
-              data-ambient
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="zoomist-container-display noselect">
-        <div class="zoomist-wrapper">
-          <div class="zoomist-image">
-            <img
-              alt="Ape"
-              src="img/renders/cosmicApe.png"
+              src="img/renders/nighttime.jpg"
               class="display-image"
               draggable="false"
               loading="lazy"
@@ -104,7 +93,20 @@
           <div class="zoomist-image">
             <img
               alt="Ape"
-              src="img/renders/kraken1.png"
+              src="img/renders/cosmicApe.jpg"
+              class="display-image"
+              draggable="false"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="zoomist-container-display noselect">
+        <div class="zoomist-wrapper">
+          <div class="zoomist-image">
+            <img
+              alt="Ape"
+              src="img/renders/kraken1.jpg"
               class="display-image"
               draggable="false"
               loading="lazy"
@@ -113,5 +115,6 @@
         </div>
       </div>
     </main>
+    <footer></footer>
   </body>
 </html>

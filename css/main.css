@@ -1,7 +1,14 @@
 main {
+  display: grid;
+  grid-template-rows: repeat(3, 500px);
+  gap: 10px;
   overflow-x: hidden;
-  height: 10000px;
   width: 100vw;
+  margin-top: 10px;
+}
+
+#navReplacer {
+  height: 0px;
 }
 
 #banner {
@@ -15,7 +22,7 @@ main {
   color: rgb(255, 255, 255);
   top: 10rem;
   padding: 0 1rem;
-  --font-size: 4em;
+  --font-size: 2.5em;
   letter-spacing: -0.1px;
   transform: scale(1.05, 0.95);
   -moz-osx-font-smoothing: grayscale;
@@ -54,16 +61,16 @@ main {
 
 @media only screen and (min-width: 640px) {
   #banner-text-container {
-    --font-size: 6em;
+    --font-size: 3em;
   }
 }
 @media only screen and (min-width: 1000px) {
   #banner-text-container {
-    --font-size: 8em;
+    --font-size: 5em;
   }
 }
 @media only screen and (min-width: 1300px) {
   #banner-text-container {
-    --font-size: 12em;
+    --font-size: 7em;
   }
 }
