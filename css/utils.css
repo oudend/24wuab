@@ -1,0 +1,47 @@
+body,
+html {
+  margin: 0;
+  overflow: scroll;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/josefin/JosefinSans-Thin.eot");
+  src: url("../fonts/josefin/JosefinSans-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/josefin/JosefinSans-Thin.woff2") format("woff2"),
+    url("../fonts/josefin/JosefinSans-Thin.woff") format("woff"),
+    url("../fonts/josefin/JosefinSans-Thin.ttf") format("truetype"),
+    url("../fonts/josefin/JosefinSans-Thin.svg#JosefinSans-Thin") format("svg");
+  font-weight: default;
+  font-style: normal;
+  font-display: swap;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}

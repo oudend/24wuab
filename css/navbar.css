@@ -1,0 +1,64 @@
+.locked {
+  position: fixed !important;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInUp {
+  from {
+    /* opacity: 0; */
+    top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 5px 0 5px;
+  background: white;
+  z-index: 20;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#github-icon {
+  align-self: end;
+  justify-self: right;
+  align-self: center;
+  margin-left: auto;
+  /* height: 100%; */
+  aspect-ratio: 1/1;
+  padding-top: 1px;
+  outline-color: rgba(0, 0, 0, 0);
+  transition: ease border-radius 200ms, outline-color 100ms;
+}
+
+/* #github-icon:hover {
+  background: rgba(75, 75, 75, 0.1);
+  border-radius: 50%;
+  outline: 2px solid rgba(0, 0, 0, 1);
+} */
+
+#menu-icon {
+  align-self: center;
+
+  opacity: 0;
+  width: 0px;
+  transition: ease all 500ms;
+}
+
+@media only screen and (max-width: 640px) {
+  #menu-icon {
+    width: unset;
+    opacity: 1;
+  }
+}

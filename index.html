@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en" class="scrollbar-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/libs/zoomist.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/libs/lazyload.min.js"></script>
+    <script defer src="js/libs/zoomist.umd.js"></script>
+    <script defer src="js/libs/ambient.min.js"></script>
+    <script src="js/libs/anime.min.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body class="scrollbar-hidden">
+    <header>
+      <nav>
+        <object
+          width="40"
+          height="40"
+          data="icons/menu.svg"
+          type="image/svg+xml"
+          id="menu-icon"
+        ></object>
+        <object
+          width="30"
+          height="30"
+          data="icons/github.svg"
+          type="image/svg+xml"
+          id="github-icon"
+        ></object>
+      </nav>
+    </header>
+    <main class="scrollbar-hidden">
+      <div id="banner">
+        <div class="zoomist-container-banner noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                id="banner-image"
+                alt="ominous face"
+                draggable="false"
+                class="lazy"
+                src="img/banner/bannerLowQuality.jpg"
+                data-src="img/banner/bannerHighQuality.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="banner-text-container">
+          <h1>Martin Terner</h1>
+          <p>Programmer and 3D artist</p>
+        </div>
+      </div>
+      <div class="zoomist-container-display noselect">
+        <div class="zoomist-wrapper">
+          <div class="zoomist-image">
+            <img
+              alt="Brick"
+              src="img/renders/brick.png"
+              class="display-image"
+              draggable="false"
+              data-ambient
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="zoomist-container-display noselect">
+        <div class="zoomist-wrapper">
+          <div class="zoomist-image">
+            <img
+              alt="Ape"
+              src="img/renders/cosmicApe.png"
+              class="display-image"
+              draggable="false"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="zoomist-container-display noselect">
+        <div class="zoomist-wrapper">
+          <div class="zoomist-image">
+            <img
+              alt="Ape"
+              src="img/renders/kraken1.png"
+              class="display-image"
+              draggable="false"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
