@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scrollbar-hidden">
+  <!-- data-theme="dark" -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +23,12 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="css/libs/zoomist.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/libs/svg-loader.min.js" async></script>
     <script defer src="js/libs/lazyload.min.js"></script>
     <script defer src="js/libs/zoomist.umd.js"></script>
     <script defer src="js/libs/ambient.min.js"></script>
@@ -36,20 +39,20 @@
   <body class="scrollbar-hidden">
     <header>
       <nav>
-        <object
+        <svg
           width="40"
           height="40"
-          data="icons/menu.svg"
-          type="image/svg+xml"
+          data-src="icons/menu.svg"
           id="menu-icon"
-        ></object>
-        <object
+          class="icon"
+        ></svg>
+        <svg
           width="30"
           height="30"
-          data="icons/github.svg"
-          type="image/svg+xml"
           id="github-icon"
-        ></object>
+          data-src="icons/github.svg"
+          class="icon"
+        ></svg>
       </nav>
       <div id="navReplacer"></div>
       <div id="banner">
@@ -74,44 +77,82 @@
       </div>
     </header>
     <main class="scrollbar-hidden">
-      <!-- data-ambient-zoomist -->
-      <div class="zoomist-container-display noselect">
-        <div class="zoomist-wrapper">
-          <div class="zoomist-image">
-            <img
-              alt="Brick"
-              src="img/renders/nighttime.jpg"
-              class="display-image"
-              draggable="false"
-              loading="lazy"
-            />
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Brick"
+                src="img/renders/nighttime.jpg"
+                class="display-image"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="zoomist-container-display noselect">
-        <div class="zoomist-wrapper">
-          <div class="zoomist-image">
-            <img
-              alt="Ape"
-              src="img/renders/cosmicApe.jpg"
-              class="display-image"
-              draggable="false"
-              loading="lazy"
-            />
-          </div>
+        <div class="display-text">
+          <h2>PROJECT1</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
         </div>
       </div>
-      <div class="zoomist-container-display noselect">
-        <div class="zoomist-wrapper">
-          <div class="zoomist-image">
-            <img
-              alt="Ape"
-              src="img/renders/kraken1.jpg"
-              class="display-image"
-              draggable="false"
-              loading="lazy"
-            />
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="img/renders/cosmicApe.jpg"
+                class="display-image"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
           </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+      </div>
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="img/renders/kraken1.jpg"
+                class="display-image"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT3</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
         </div>
       </div>
     </main>

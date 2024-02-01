@@ -1,8 +1,9 @@
 main {
+  background: hsl(var(--background));
   display: grid;
-  grid-template-rows: repeat(3, 500px);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
   gap: 10px;
-  overflow-x: hidden;
   width: 100vw;
   margin-top: 10px;
 }
@@ -13,13 +14,12 @@ main {
 
 #banner {
   position: relative;
+  filter: contrast(90%);
 }
 
 #banner-text-container {
-  font-family: "Josefin Sans", Fallback, sans-serif;
   z-index: 3;
   position: absolute;
-  color: rgb(255, 255, 255);
   top: 10rem;
   padding: 0 1rem;
   --font-size: 2.5em;
@@ -31,20 +31,25 @@ main {
 }
 
 #banner-text-container > h1 {
+  font-family: var(--title-font-family);
   font-size: var(--font-size);
+  /* color: hsl(var(--primary-foreground)); */
+  color: rgba(255, 255, 255, 1);
   margin: 0;
 }
 
 #banner-text-container > p {
+  font-family: var(--subtitle-font-family);
+  color: rgba(255, 255, 255, 0.7);
+  /* hsl(var(--primary-foreground)); */
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--primary));
   margin: 0;
   margin-left: 20px;
-  font-weight: bold;
   font-size: calc(var(--font-size) / 4);
-  /* text-shadow: 1px 1px 10px 10px rgba(0, 0, 150, 1); */
 }
 
 #banner-image {
-  /* height: 500px; */
   object-fit: cover;
   overflow-y: auto;
   width: 100%;
@@ -52,8 +57,40 @@ main {
   height: 100svh;
 }
 
+.display {
+  position: relative;
+}
+
+.display-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: hsl(var(--popover));
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 60%;
+  transform: translateX(-50%) translateY(-50%);
+  --font-size: 2em;
+}
+
+.display-text > h2 {
+  font-family: var(--subtitle-font-family);
+  margin: 0;
+  align-self: center;
+  font-size: var(--font-size);
+}
+
+.display-text > p {
+  font-family: var(--paragraph-font-family);
+  text-align: justify;
+  /* text-justify: inter-word; */
+  font-size: calc(var(--font-size) / 4);
+}
+
 .display-image {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   height: 500px;
   aspect-ratio: 1/1;
@@ -63,11 +100,18 @@ main {
   #banner-text-container {
     --font-size: 3em;
   }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 1000px) {
   #banner-text-container {
     --font-size: 5em;
   }
+  /* main {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 }
 @media only screen and (min-width: 1300px) {
   #banner-text-container {

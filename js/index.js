@@ -58,7 +58,7 @@ for (const display of displays) {
     bounds: true,
     draggable: true,
     wheelable: false,
-    pinchable: false,
+    pinchable: true,
     zoomer: true,
   });
 }

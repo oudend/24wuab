@@ -2,12 +2,11 @@
   position: fixed !important;
   animation-name: fadeInUp;
   animation-duration: 1s;
-  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 20px 3px var(--foreground);
 }
 
 @keyframes fadeInUp {
   from {
-    /* opacity: 0; */
     top: -50px;
   }
 
@@ -23,11 +22,23 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 0 5px 0 5px;
-  background: white;
+  background: hsl(var(--popover));
   z-index: 20;
   height: 50px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.icon {
+  color: hsl(var(--popover-foreground));
+  cursor: pointer;
+  transition: ease-in-out color 200ms;
+}
+
+.icon:hover {
+  /* --test: 0, 100%, 50%; */
+  color: hsl(var(--primary));
+  /* color: hsl(0, 100%, 50%, 0.5); */
 }
 
 #github-icon {
@@ -35,18 +46,10 @@ nav {
   justify-self: right;
   align-self: center;
   margin-left: auto;
-  /* height: 100%; */
   aspect-ratio: 1/1;
   padding-top: 1px;
   outline-color: rgba(0, 0, 0, 0);
-  transition: ease border-radius 200ms, outline-color 100ms;
 }
-
-/* #github-icon:hover {
-  background: rgba(75, 75, 75, 0.1);
-  border-radius: 50%;
-  outline: 2px solid rgba(0, 0, 0, 1);
-} */
 
 #menu-icon {
   align-self: center;

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Maitree';
+    src: url('Maitree.eot');
+    src: url('Maitree.eot?#iefix') format('embedded-opentype'),
+        url('Maitree.woff2') format('woff2'),
+        url('Maitree.woff') format('woff'),
+        url('Maitree.ttf') format('truetype'),
+        url('Maitree.svg#Maitree') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

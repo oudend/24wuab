@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Thin.eot');
+    src: url('RobotoSlab-Thin.eot?#iefix') format('embedded-opentype'),
+        url('RobotoSlab-Thin.woff2') format('woff2'),
+        url('RobotoSlab-Thin.woff') format('woff'),
+        url('RobotoSlab-Thin.ttf') format('truetype'),
+        url('RobotoSlab-Thin.svg#RobotoSlab-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
