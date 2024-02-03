@@ -22,17 +22,22 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="css/libs/zoomist.css" />
     <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/utils.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/libs/zoomist.css" />
+    <link rel="stylesheet" href="css/components/essentials/utils.css" />
+    <link rel="stylesheet" href="css/components/banner.css" />
+    <link rel="stylesheet" href="css/components/display.css" />
+    <link rel="stylesheet" href="css/components/essentials/footer.css" />
+    <link rel="stylesheet" href="css/components/essentials/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="js/libs/svg-loader.min.js" async></script>
     <script defer src="js/libs/lazyload.min.js"></script>
     <script defer src="js/libs/zoomist.umd.js"></script>
     <script defer src="js/libs/ambient.min.js"></script>
     <script src="js/libs/anime.min.js"></script>
+    <script defer src="js/components/essentials/navbar.js"></script>
+    <script defer src="js/components/banner.js"></script>
+    <script defer src="js/components/display.js"></script>
     <script defer src="js/index.js"></script>
     <title>Portfolio</title>
   </head>
@@ -46,6 +51,16 @@
           id="menu-icon"
           class="icon"
         ></svg>
+        <ul class="nav-headers">
+          <li>
+            <a href="/index.html" title="home" class="active-nav-header"
+              >Home</a
+            >
+          </li>
+          <li><a href="" title="contact">Contact</a></li>
+          <li><a href="" title="projects">Projects</a></li>
+          <li><a href="" title="about me">About me</a></li>
+        </ul>
         <svg
           width="30"
           height="30"
@@ -102,6 +117,18 @@
             Ratione nostrum
           </p>
         </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="http://oudend.github.io"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
       </div>
       <div class="display">
         <div class="zoomist-container-display noselect">
@@ -128,6 +155,18 @@
             Ratione nostrum
           </p>
         </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="http://oudend.github.io"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
       </div>
       <div class="display">
         <div class="zoomist-container-display noselect">
@@ -154,6 +193,18 @@
             Ratione nostrum
           </p>
         </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="http://oudend.github.io"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
       </div>
     </main>
     <footer></footer>

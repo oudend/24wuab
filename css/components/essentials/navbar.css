@@ -1,0 +1,130 @@
+.locked {
+  position: fixed !important;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  box-shadow: 2px 2px 20px 3px var(--foreground);
+}
+
+@keyframes fadeInUp {
+  from {
+    top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 0 5px 0 5px;
+  background: hsl(var(--popover));
+  z-index: 20;
+  height: 50px;
+  /* height: 5vh; */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-headers {
+  display: flex;
+  flex-direction: row;
+
+  opacity: 1;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  transition: ease opacity 400ms, ease width 1000ms;
+}
+
+.nav-headers > li {
+  margin-left: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.nav-headers > li > a {
+  font-family: var(--subtitle-font-family);
+  font-size: 1.5em;
+  color: hsl(var(--accent-foreground));
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 0.4em 0;
+  text-decoration: none;
+}
+
+.active-nav-header {
+  font-weight: bold;
+  color: hsl(var(--primary-foreground));
+}
+
+.nav-headers > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hsl(var(--primary));
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-headers > li > a:hover::after,
+.nav-headers > li > a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, -0.2em, 0);
+}
+.icon {
+  color: hsl(var(--popover-foreground));
+  cursor: pointer;
+  transition: ease-in-out color 200ms;
+}
+
+.icon:hover {
+  /* --test: 0, 100%, 50%; */
+  color: hsl(var(--primary));
+  /* color: hsl(0, 100%, 50%, 0.5); */
+}
+
+#github-icon {
+  align-self: end;
+  justify-self: right;
+  align-self: center;
+  /* margin-left: 30px; */
+  aspect-ratio: 1/1;
+  padding-top: 1px;
+  outline-color: rgba(0, 0, 0, 0);
+}
+
+#menu-icon {
+  align-self: center;
+
+  opacity: 0;
+  width: 0px;
+  transition: ease all 500ms;
+
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  #menu-icon {
+    width: unset;
+    opacity: 1;
+  }
+
+  .nav-headers {
+    width: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,53 @@
+#navReplacer {
+  height: 0px;
+}
+
+#banner {
+  position: relative;
+  filter: contrast(90%);
+}
+
+#banner-text-container {
+  z-index: 3;
+  position: absolute;
+  top: 15%;
+  padding: 0 2vw;
+  letter-spacing: -0.1px;
+  transform: scale(1.05, 0.95);
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin-left: 10px;
+  /* --font-size: 2.5em; */
+  --font-size: 7vw;
+}
+
+#banner-text-container > h1 {
+  font-family: var(--title-font-family);
+  font-size: var(--font-size);
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+#banner-text-container > p {
+  font-family: var(--subtitle-font-family);
+  color: rgba(255, 255, 255, 0.7);
+  /* hsl(var(--primary-foreground)); */
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--primary));
+  margin: 0;
+  margin-left: 20px;
+  font-size: calc(var(--font-size) / 4);
+}
+
+#banner-image {
+  object-fit: cover;
+  overflow-y: auto;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  height: 100svh;
+}
+
+.zoomist-image {
+  width: 100%;
+  height: 100%;
+}
