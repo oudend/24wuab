@@ -148,10 +148,12 @@ nav {
 
 #menu-exit-icon {
   opacity: 0;
-  transition: opacity 1000ms, color 1000ms;
+  transform: rotateZ(90deg);
+  transition: opacity 1000ms, color 1000ms, transform 500ms;
   transition-delay: 0ms;
 }
 .menu.menu-visible #menu-exit-icon {
+  transform: rotateZ(0deg);
   opacity: 1;
   color: hsl(var(--primary-foreground));
   transition-delay: 700ms;
@@ -172,7 +174,7 @@ nav {
   left: 0px;
   width: 0%;
   height: 100vh;
-  z-index: 10;
+  z-index: 20;
   overflow-x: hidden;
 
   transition: width 500ms, opacity 500ms;

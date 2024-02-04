@@ -15,7 +15,7 @@
   top: 30%;
   width: 60%;
   transform: translateX(-50%) translateY(-50%);
-  --font-size: 8.5vw;
+  --font-size: 2em;
   transition: ease-in color 100ms, ease-in top 100ms;
 }
 
@@ -70,7 +70,7 @@
 
 @media only screen and (min-width: 640px) {
   .display-text {
-    --font-size: 2.5vw;
+    --font-size: 1.3em;
   }
 }
 
@@ -112,6 +112,6 @@
 }
 @media only screen and (min-width: 1300px) {
   .display-text {
-    --font-size: 3vw;
+    --font-size: 3em;
   }
 }
