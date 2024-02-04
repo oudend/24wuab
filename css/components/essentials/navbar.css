@@ -31,7 +31,19 @@ nav {
   box-sizing: border-box;
 }
 
-.nav-headers {
+.nav-headers-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.nav-headers-menu > li > a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav-headers-top {
   display: flex;
   flex-direction: row;
 
@@ -44,7 +56,7 @@ nav {
   transition: ease opacity 400ms, ease width 1000ms;
 }
 
-.nav-headers > li {
+.nav-headers-top > li {
   margin-left: 30px;
   align-self: center;
   justify-self: center;
@@ -61,6 +73,10 @@ nav {
   position: relative;
   padding: 0.4em 0;
   text-decoration: none;
+}
+
+.nav-headers-menu > li > a {
+  color: hsl(var(--primary-foreground));
 }
 
 .active-nav-header {
@@ -107,7 +123,12 @@ nav {
   outline-color: rgba(0, 0, 0, 0);
 }
 
-#menu-icon {
+#menu-button {
+  display: flex;
+
+  flex-direction: column;
+  align-content: center;
+
   align-self: center;
 
   opacity: 0;
@@ -115,15 +136,66 @@ nav {
   transition: ease all 500ms;
 
   margin-right: auto;
+
+  border: none;
+  background-color: transparent;
+}
+
+#menu-exit-button {
+  border: none;
+  background-color: transparent;
+}
+
+#menu-exit-icon {
+  opacity: 0;
+  transition: opacity 1000ms, color 1000ms;
+  transition-delay: 0ms;
+}
+.menu.menu-visible #menu-exit-icon {
+  opacity: 1;
+  color: hsl(var(--primary-foreground));
+  transition-delay: 700ms;
+}
+
+.menu {
+  display: grid;
+
+  grid-template-rows: 50px 1fr;
+  background: linear-gradient(
+    270deg,
+    hsl(var(--primary)),
+    hsl(var(--primary-dark))
+  );
+  position: fixed;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100vh;
+  z-index: 10;
+  overflow-x: hidden;
+
+  transition: width 500ms, opacity 500ms;
+}
+
+.menu > div {
+  width: 100vw;
+}
+
+.menu-visible {
+  transition: width 1000ms, opacity 100ms;
+  width: 100%;
+  opacity: 1;
+  /* transition: width 100ms, opacity 1000ms; */
 }
 
 @media only screen and (max-width: 640px) {
-  #menu-icon {
+  #menu-button {
     width: unset;
     opacity: 1;
   }
 
-  .nav-headers {
+  .nav-headers-top {
     width: 0;
     opacity: 0;
   }

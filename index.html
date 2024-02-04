@@ -35,23 +35,27 @@
     <script defer src="js/libs/zoomist.umd.js"></script>
     <script defer src="js/libs/ambient.min.js"></script>
     <script src="js/libs/anime.min.js"></script>
+    <script defer src="js/components/essentials/menu.js"></script>
     <script defer src="js/components/essentials/navbar.js"></script>
     <script defer src="js/components/banner.js"></script>
     <script defer src="js/components/display.js"></script>
+    <script defer src="js/components/banner-text-animation.js"></script>
     <script defer src="js/index.js"></script>
     <title>Portfolio</title>
   </head>
   <body class="scrollbar-hidden">
     <header>
       <nav>
-        <svg
-          width="40"
-          height="40"
-          data-src="icons/menu.svg"
-          id="menu-icon"
-          class="icon"
-        ></svg>
-        <ul class="nav-headers">
+        <button type="button" title="menu" id="menu-button">
+          <svg
+            width="40"
+            height="40"
+            data-src="icons/menu.svg"
+            id="menu-icon"
+            class="icon"
+          ></svg>
+        </button>
+        <ul class="nav-headers nav-headers-top">
           <li>
             <a href="/index.html" title="home" class="active-nav-header"
               >Home</a
@@ -68,6 +72,31 @@
           data-src="icons/github.svg"
           class="icon"
         ></svg>
+      </nav>
+      <nav id="menu-popup" class="menu">
+        <div id="">
+          <button type="button" title="menu" id="menu-exit-button">
+            <svg
+              width="40"
+              height="40"
+              id="menu-exit-icon"
+              data-src="icons/x.svg"
+              class="icon"
+            ></svg>
+          </button>
+        </div>
+        <div>
+          <ul class="nav-headers nav-headers-menu">
+            <li>
+              <a href="/index.html" title="home" class="active-nav-header"
+                >Home</a
+              >
+            </li>
+            <li><a href="" title="contact">Contact</a></li>
+            <li><a href="" title="projects">Projects</a></li>
+            <li><a href="" title="about me">About me</a></li>
+          </ul>
+        </div>
       </nav>
       <div id="navReplacer"></div>
       <div id="banner">

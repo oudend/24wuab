@@ -24,7 +24,8 @@
 #banner-text-container > h1 {
   font-family: var(--title-font-family);
   font-size: var(--font-size);
-  color: rgba(255, 255, 255, 1);
+  color: hsl(var(--primary));
+  /* filter: hue-rotate(50deg); */
   margin: 0;
 }
 
