@@ -1,7 +1,24 @@
 footer {
+  height: 200px;
+  margin-top: 10px;
+  /* background-image: url("../../../img/banner/bannerLowQuality.jpg"); */
+  /* filter: blur(10px); */
+  /* back */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#footer-content {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#footer-content * {
+  z-index: 1;
 }
 
 #footer-icons {
@@ -12,17 +29,36 @@ footer {
   height: 100%;
 }
 
+#footer-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 0px 80%;
+  filter: blur(15px) brightness(30%);
+  transform: scale(1.2);
+}
+
+/* 
+#footer-icons > svg {
+  color: white;
+} */
+
 #footer-links {
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
 }
 
 #footer-links > a {
   font-size: 2em;
-  color: hsl(var(--popover-foreground));
+  /* color: hsl(var(--popover-foreground)); */
+  color: inherit;
 }
 #footer-links > a:hover {
   /* font-size: calc(4vw + 10px); */
@@ -39,11 +75,12 @@ footer {
 }
 
 #github-icon-footer {
-  align-self: end;
-  justify-self: right;
   align-self: center;
-  /* margin-left: 30px; */
   aspect-ratio: 1/1;
   padding-top: 1px;
-  outline-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+#github-icon-footer:hover {
+  color: hsl(var(--primary));
 }
