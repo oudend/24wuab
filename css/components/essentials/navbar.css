@@ -165,7 +165,7 @@ nav {
   grid-template-rows: 50px 1fr;
   background: linear-gradient(
     270deg,
-    hsl(var(--primary)),
+    hsl(var(--primary) / 0.3),
     hsl(var(--primary-dark))
   );
   position: fixed;
