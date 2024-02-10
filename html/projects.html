@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="scrollbar-hidden">
+  <!-- data-theme="dark" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="oudend's portfolio: projects" />
+    <meta name="description" content="oudends portfolio website" />
+    <meta
+      name="keywords"
+      content="oudend, Martin Terner, portfolio, projects"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Martin Terner" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oudend.github.io/24wuab/" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="oudends portfolio website" />
+    <meta
+      property="og:image"
+      content="https://oudend.github.io/24wuab/img/banner/bannerHighQuality.jpg"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://oudend.github.io/24wuab/" />
+    <meta property="twitter:title" content="Portfolio" />
+    <meta property="twitter:description" content="oudends portfolio website" />
+    <meta
+      property="twitter:image"
+      content="https://oudend.github.io/24wuab/img/banner/bannerHighQuality.jpg"
+    />
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/libs/zoomist.css" />
+    <link rel="stylesheet" href="../css/components/essentials/utils.css" />
+    <link rel="stylesheet" href="../css/components/project-index.css" />
+    <link rel="stylesheet" href="../css/components/banner.css" />
+    <link rel="stylesheet" href="../css/components/display.css" />
+    <link rel="stylesheet" href="../css/components/essentials/footer.css" />
+    <link rel="stylesheet" href="../css/components/essentials/navbar.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/libs/svg-loader.min.js" async></script>
+    <script defer src="../js/libs/lazyload.min.js"></script>
+    <script defer src="../js/libs/zoomist.umd.js"></script>
+    <script defer src="../js/libs/ambient.min.js"></script>
+    <script src="../js/libs/anime.min.js"></script>
+    <script defer src="../js/components/essentials/menu.js"></script>
+    <script defer src="../js/components/essentials/navbar.js"></script>
+    <script defer src="../js/components/banner.js"></script>
+    <script defer src="../js/components/display.js"></script>
+    <script defer src="../js/index.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body class="scrollbar-hidden">
+    <header>
+      <nav id="main-nav">
+        <button type="button" title="menu" id="menu-button">
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/menu.svg"
+            id="menu-icon"
+            class="icon"
+          ></svg>
+        </button>
+        <ul class="nav-headers nav-headers-top">
+          <li>
+            <a href="../index.html" title="home">Home</a>
+          </li>
+          <li>
+            <a href="" title="contact">Contact</a>
+          </li>
+          <li>
+            <a href="./projects.html" title="projects" class="active-nav-header"
+              >Projects</a
+            >
+          </li>
+          <li><a href="" title="about me">About me</a></li>
+        </ul>
+        <svg
+          width="30"
+          height="30"
+          id="github-icon"
+          data-src="../icons/github.svg"
+          class="icon"
+        ></svg>
+      </nav>
+      <nav id="menu-popup" class="menu">
+        <div id="">
+          <button type="button" title="menu" id="menu-exit-button">
+            <svg
+              width="40"
+              height="40"
+              id="menu-exit-icon"
+              data-src="../icons/x.svg"
+              class="icon"
+            ></svg>
+          </button>
+        </div>
+        <div>
+          <ul class="nav-headers nav-headers-menu">
+            <li>
+              <a href="/index.html" title="home" class="active-nav-header"
+                >Home</a
+              >
+            </li>
+            <li><a href="" title="contact">Contact</a></li>
+            <li><a href="" title="projects">Projects</a></li>
+            <li><a href="" title="about me">About me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="navReplacer"></div>
+      <div id="banner">
+        <div class="zoomist-container-banner noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                id="banner-image"
+                alt="ominous face"
+                draggable="false"
+                class="lazy"
+                src="../img/banner/low quality/banner.jpg"
+                data-src="../img/banner/high quality/banner.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="project-banner-container">
+          <h1>Projects</h1>
+          <nav id="project-index">
+            <h2>Programming</h2>
+            <ol>
+              <li>
+                <a href="" title="project1">PROJECT1</a>
+                <a href="" title="project1 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+              <li>
+                <a href="" title="project2">PROJECT2</a>
+                <a href="" title="project2 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+              <li>
+                <a href="" title="project1">PROJECT3</a>
+                <a href="" title="project3 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+            </ol>
+            <h2>3D</h2>
+            <ol>
+              <li>
+                <a href="" title="project1">PROJECT1</a>
+                <a href="" title="project1 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+              <li>
+                <a href="" title="project2">PROJECT2</a>
+                <a href="" title="project2 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+              <li>
+                <a href="" title="project3">PROJECT3</a>
+                <a href="" title="project3 link" class="project-index-link">
+                  <svg
+                    width="30"
+                    height="30"
+                    id="external-link"
+                    data-src="../icons/external-link.svg"
+                    class="icon"
+                  ></svg>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <h2>3D</h2>
+    <main class="scrollbar-hidden">
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Brick"
+                src="../img/renders/low quality/nighttime.jpg"
+                data-src="../img/renders/high quality/nighttime.jpg"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT1</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/nighttime.jpg"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/cosmicApe.jpg"
+                data-src="../img/renders/high quality/cosmicApe.jpg"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/cosmicApe.jpg"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/kraken1.jpg"
+                data-src="../img/renders/high quality/kraken1.jpg"
+                class="display-image lazy"
+                class="display-image"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT3</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/kraken1.jpg"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="nightime manor"
+                src="../img/renders/low quality/manor-night.jpg"
+                data-src="../img/renders/high quality/manor-night.png"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT4</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/manor-night.png"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+      <div class="display">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/cosmicMonkey.jpg"
+                data-src="../img/renders/high quality/cosmicMonkey.png"
+                class="display-image lazy"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>PROJECT5</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+            quasi veritatis distinctio nam neque totam natus repellendus iure
+            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+            quos corporis id deserunt nemo recusandae excepturi modi esse est.
+            Ratione nostrum
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/cosmicMonkey.png"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/external-link.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <img
+        id="footer-background"
+        src="../img/banner/low quality/banner.jpg"
+        alt="ominous face"
+      />
+      <div id="footer-content">
+        <div id="footer-icons">
+          <svg
+            width="30"
+            height="30"
+            id="github-icon-footer"
+            class="icon"
+            data-src="../icons/github.svg"
+          ></svg>
+        </div>
+        <div id="footer-links">
+          <a href="https://github.com/oudend">Github</a>
+          <a href="https://www.artstation.com/oudend">Artstation</a>
+        </div>
+        <div id="footer-contact-info"><span>070-353-15-96</span></div>
+      </div>
+    </footer>
+  </body>
+</html>

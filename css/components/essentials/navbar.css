@@ -16,7 +16,7 @@
   }
 }
 
-nav {
+#main-nav {
   margin: 0;
   padding: 0;
   display: flex;
@@ -168,6 +168,8 @@ nav {
     hsl(var(--primary) / 0.3),
     hsl(var(--primary-dark))
   );
+  /* background: transparent; */
+  /* filter: blur(1px); */
   position: fixed;
   opacity: 0;
   top: 0px;

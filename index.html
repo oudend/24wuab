@@ -71,7 +71,7 @@
   </head>
   <body class="scrollbar-hidden">
     <header>
-      <nav>
+      <nav id="main-nav">
         <button type="button" title="menu" id="menu-button">
           <svg
             width="40"
@@ -88,7 +88,7 @@
             >
           </li>
           <li><a href="" title="contact">Contact</a></li>
-          <li><a href="" title="projects">Projects</a></li>
+          <li><a href="./html/projects.html" title="projects">Projects</a></li>
           <li><a href="" title="about me">About me</a></li>
         </ul>
         <svg
@@ -114,12 +114,14 @@
         <div>
           <ul class="nav-headers nav-headers-menu">
             <li>
-              <a href="/index.html" title="home" class="active-nav-header"
+              <a href="./index.html" title="home" class="active-nav-header"
                 >Home</a
               >
             </li>
             <li><a href="" title="contact">Contact</a></li>
-            <li><a href="" title="projects">Projects</a></li>
+            <li>
+              <a href="./html/projects.html" title="projects">Projects</a>
+            </li>
             <li><a href="" title="about me">About me</a></li>
           </ul>
         </div>
@@ -134,8 +136,8 @@
                 alt="ominous face"
                 draggable="false"
                 class="lazy"
-                src="img/banner/bannerLowQuality.jpg"
-                data-src="img/banner/bannerHighQuality.jpg"
+                src="/img/banner/low quality/banner.jpg"
+                data-src="img/banner/high quality/banner.jpg"
               />
             </div>
           </div>
@@ -153,8 +155,9 @@
             <div class="zoomist-image">
               <img
                 alt="Brick"
-                src="img/renders/nighttime.jpg"
-                class="display-image"
+                src="../img/renders/low quality/nighttime.jpg"
+                data-src="../img/renders/high quality/nighttime.jpg"
+                class="display-image lazy"
                 draggable="false"
                 loading="lazy"
               />
@@ -175,12 +178,12 @@
         <a
           title="link to project"
           class="display-link"
-          href="http://oudend.github.io"
+          href="../img/renders/high quality/nighttime.jpg"
         >
           <svg
             width="40"
             height="40"
-            data-src="icons/external-link.svg"
+            data-src="../icons/external-link.svg"
             class="icon display-link-icon"
           ></svg>
         </a>
@@ -191,8 +194,9 @@
             <div class="zoomist-image">
               <img
                 alt="Ape"
-                src="img/renders/cosmicApe.jpg"
-                class="display-image"
+                src="../img/renders/low quality/cosmicApe.jpg"
+                data-src="../img/renders/high quality/cosmicApe.jpg"
+                class="display-image lazy"
                 draggable="false"
                 loading="lazy"
               />
@@ -213,12 +217,12 @@
         <a
           title="link to project"
           class="display-link"
-          href="http://oudend.github.io"
+          href="../img/renders/high quality/cosmicApe.jpg"
         >
           <svg
             width="40"
             height="40"
-            data-src="icons/external-link.svg"
+            data-src="../icons/external-link.svg"
             class="icon display-link-icon"
           ></svg>
         </a>
@@ -229,7 +233,9 @@
             <div class="zoomist-image">
               <img
                 alt="Ape"
-                src="img/renders/kraken1.jpg"
+                src="../img/renders/low quality/kraken1.jpg"
+                data-src="../img/renders/high quality/kraken1.jpg"
+                class="display-image lazy"
                 class="display-image"
                 draggable="false"
                 loading="lazy"
@@ -251,12 +257,12 @@
         <a
           title="link to project"
           class="display-link"
-          href="http://oudend.github.io"
+          href="../img/renders/high quality/kraken1.jpg"
         >
           <svg
             width="40"
             height="40"
-            data-src="icons/external-link.svg"
+            data-src="../icons/external-link.svg"
             class="icon display-link-icon"
           ></svg>
         </a>
@@ -265,7 +271,7 @@
     <footer>
       <img
         id="footer-background"
-        src="img/banner/bannerLowQuality.jpg"
+        src="img/banner/low quality/banner.jpg"
         alt="ominous face"
       />
       <div id="footer-content">
