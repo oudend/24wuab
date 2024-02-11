@@ -5,6 +5,8 @@
 #banner {
   position: relative;
   filter: contrast(90%);
+  /* height: 1000px; */
+  height: max(100svh, min-content);
 }
 
 #banner-text-container {
@@ -17,9 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin-left: 10px;
-  /* --font-size: 2.5em; */
   --font-size: 1.5em;
-  /* --font-size: 7vw; */
 }
 
 #banner-text-container > h1 {
@@ -44,9 +44,13 @@
 #banner-image {
   object-fit: cover;
   overflow-y: auto;
-  width: 100%;
+  overflow-x: hidden;
+  object-position: center;
+  /* width: 100%; */
+  min-width: 100%;
   aspect-ratio: 3 / 2;
-  height: 100svh;
+  /* height: 100%; */
+  /* height: auto; */
 }
 
 .zoomist-image {

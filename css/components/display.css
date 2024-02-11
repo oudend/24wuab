@@ -20,6 +20,9 @@
   transition: ease-in color 100ms, ease-in top 100ms;
 }
 
+.display:hover {
+}
+
 .display:hover > .display-text {
   color: hsl(var(--primary));
   top: 50%;
@@ -49,12 +52,17 @@
   transition: ease-in font-size 100ms;
 }
 
+.display:hover .display-image {
+  filter: brightness(20%);
+}
+
 .display-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
   box-sizing: border-box;
+  transition: linear filter 400ms;
 }
 
 .display-link {

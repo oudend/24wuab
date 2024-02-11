@@ -1,6 +1,20 @@
 const navbar = document.querySelector("nav");
 const navReplacer = document.getElementById("navReplacer");
 
+const themeButtons = document.querySelectorAll(".theme-button");
+
+var theme = "light";
+
+for (const themeButton of themeButtons) {
+  themeButton.addEventListener("click", () => {
+    themeButton.classList.toggle("light");
+
+    theme = theme === "light" ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", theme);
+  });
+}
+
 var fixed = false;
 
 window.addEventListener("scroll", onScroll);
