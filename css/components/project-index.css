@@ -95,7 +95,7 @@
     align-content: center;
     justify-content: center;
     /* gap: 1px; */
-    height: 100px;
+    /* height: 100px; */
   }
 
   #project-index > ol > li {

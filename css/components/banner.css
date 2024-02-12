@@ -7,6 +7,7 @@
   filter: contrast(90%);
   /* height: 1000px; */
   height: max(100svh, min-content);
+  overflow-x: hidden;
 }
 
 #banner-text-container {

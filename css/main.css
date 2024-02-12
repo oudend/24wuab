@@ -2,11 +2,13 @@ main {
   background: hsl(var(--background));
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* grid-template-rows: 1fr min-content; */
   justify-content: center;
-  gap: 10px;
+  gap: 0px;
   width: 100vw;
-  margin-top: 10px;
+}
+
+main .zoomist-image {
+  height: 500px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -14,9 +16,14 @@ main {
     /* grid-template-columns: auto max-content; */
     grid-template-columns: repeat(3, 1fr);
   }
-}
-/* @media only screen and (min-width: 1000px) {
-  main {
-    grid-template-columns: repeat(3, 1fr);
+
+  main .zoomist-image {
+    height: 234px;
   }
-} */
+}
+
+@media only screen and (min-width: 1000px) {
+  main .zoomist-image {
+    height: 700px;
+  }
+}

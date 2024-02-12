@@ -58,10 +58,12 @@
 
 .display-image {
   object-fit: cover;
-  width: 100%;
+  /* width: 100%; */
+  /* height: inherit; */
   height: 100%;
+  width: 100%;
   aspect-ratio: 1/1;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   transition: linear filter 400ms;
 }
 

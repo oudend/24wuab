@@ -3,6 +3,8 @@ html {
   margin: 0;
   overflow: scroll;
   background: hsl(var(--background));
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {

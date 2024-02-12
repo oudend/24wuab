@@ -14,12 +14,14 @@ for (const display of displays) {
     }
   );
 
-  const zoomObject = { zoom: 1 };
+  const zoomObject = { zoom: 1.02 };
+
+  displayZoomist.zoomTo(zoomObject.zoom);
 
   display.addEventListener("mouseover", (e) => {
     const anima = anime({
       targets: zoomObject,
-      zoom: 1.05,
+      zoom: 1.07,
       speed: 1,
       easing: "easeOutElastic",
       update: (anim) => {
@@ -30,7 +32,7 @@ for (const display of displays) {
   display.addEventListener("mouseout", (e) => {
     const anima = anime({
       targets: zoomObject,
-      zoom: 1,
+      zoom: 1.02,
       speed: 1,
       easing: "easeOutElastic",
       update: (anim) => {

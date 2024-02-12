@@ -1,6 +1,6 @@
 footer {
   height: 200px;
-  margin-top: 10px;
+  margin-top: 0px;
   /* background-image: url("../../../img/banner/bannerLowQuality.jpg"); */
   /* filter: blur(10px); */
   /* back */
@@ -39,7 +39,7 @@ footer {
   object-fit: cover;
   object-position: 0px 80%;
   filter: blur(15px) brightness(30%);
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 /* 
