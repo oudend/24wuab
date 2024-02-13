@@ -59,7 +59,7 @@
     <link rel="stylesheet" href="../css/components/display.css" />
     <link rel="stylesheet" href="../css/components/essentials/footer.css" />
     <link rel="stylesheet" href="../css/components/essentials/navbar.css" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
     <script defer src="../js/libs/svg-loader.min.js" async></script>
     <script defer src="../js/libs/lazyload.min.js"></script>
     <script defer src="../js/libs/zoomist.umd.js"></script>
@@ -276,8 +276,14 @@
             <h2>3D</h2>
             <ol>
               <li>
-                <a href="" title="project1">PROJECT1</a>
-                <a href="" title="project1 link" class="project-index-link">
+                <a href="" title="project1">JSCASTER</a>
+                <a
+                  href="https://github.com/oudend/jscaster"
+                  target="_blank"
+                  rel="noopener"
+                  title="project1 link"
+                  class="project-index-link"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -288,8 +294,14 @@
                 </a>
               </li>
               <li>
-                <a href="" title="project2">PROJECT2</a>
-                <a href="" title="project2 link" class="project-index-link">
+                <a href="#bouncyballs" title="project2">BOUNCY BALLS</a>
+                <a
+                  href="https://github.com/oudend/bouncyballs"
+                  target="_blank"
+                  rel="noopener"
+                  title="project2 link"
+                  class="project-index-link"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -300,8 +312,14 @@
                 </a>
               </li>
               <li>
-                <a href="" title="project3">PROJECT3</a>
-                <a href="" title="project3 link" class="project-index-link">
+                <a href="#voxeloctree" title="project3">PROJECT3</a>
+                <a
+                  href="https://github.com/oudend/VoxelBufferOctree"
+                  target="_blank"
+                  rel="noopener"
+                  title="project3 link"
+                  class="project-index-link"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -316,248 +334,380 @@
         </div>
       </div>
     </header>
-    <h2>3D</h2>
     <main class="scrollbar-hidden">
-      <div class="display" id="project1">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="Brick"
-                src="../img/renders/low quality/nighttime.jpg"
-                data-src="../img/renders/high quality/nighttime.jpg"
-                class="display-image lazy"
-                draggable="false"
-                loading="lazy"
-              />
+      <h2>3D</h2>
+      <div class="display-container">
+        <div class="display" id="project1">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="Brick"
+                  src="../img/renders/low quality/nighttime.jpg"
+                  data-src="../img/renders/high quality/nighttime.jpg"
+                  class="display-image lazy"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
+          <div class="display-text">
+            <h2>PROJECT1</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/nighttime.jpg"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
         </div>
-        <div class="display-text">
-          <h2>PROJECT1</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
+        <div class="display" id="project2">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="Ape"
+                  src="../img/renders/low quality/cosmicApe.jpg"
+                  data-src="../img/renders/high quality/cosmicApe.jpg"
+                  class="display-image lazy"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="display-text">
+            <h2>PROJECT2</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/cosmicApe.jpg"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
         </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/nighttime.jpg"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
+        <div class="display" id="project3">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="Ape"
+                  src="../img/renders/low quality/kraken1.jpg"
+                  data-src="../img/renders/high quality/kraken1.jpg"
+                  class="display-image lazy"
+                  class="display-image"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="display-text">
+            <h2>PROJECT3</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/kraken1.jpg"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
+        </div>
+        <div class="display" id="project4">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="nightime manor"
+                  src="../img/renders/low quality/manor-night.jpg"
+                  data-src="../img/renders/high quality/manor-night.jpg"
+                  class="display-image lazy"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="display-text">
+            <h2>PROJECT4</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/manor-night.png"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
+        </div>
+        <div class="display" id="project5">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="Cosmic monkey"
+                  src="../img/renders/low quality/cosmicMonkey.jpg"
+                  data-src="../img/renders/high quality/cosmicMonkey.jpg"
+                  class="display-image lazy"
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="display-text">
+            <h2>PROJECT5</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/cosmicMonkey.png"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
+        </div>
+        <div class="display" id="project6">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="Lego Brick"
+                  src="../img/renders/low quality/brick.jpg"
+                  data-src="../img/renders/high quality/brick.jpg"
+                  class="display-image lazy"
+                  class="display-image"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="display-text">
+            <h2>PROJECT6</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="../img/renders/high quality/brick.jpg"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
+        </div>
       </div>
-      <div class="display" id="project2">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="Ape"
-                src="../img/renders/low quality/cosmicApe.jpg"
-                data-src="../img/renders/high quality/cosmicApe.jpg"
-                class="display-image lazy"
-                draggable="false"
-                loading="lazy"
-              />
+
+      <h2>PROGRAMMING</h2>
+      <div class="display-container">
+        <div class="display" id="jscaster">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="raycasting demo"
+                  src="../img/programming/low quality/jscaster.jpg"
+                  data-src="../img/programming/high quality/jscaster.jpg"
+                  class="display-image lazy"
+                  class="display-image"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
+          <div class="display-text">
+            <h2>JSCASTER</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="https://github.com/oudend/jscaster"
+            rel="noopener"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
         </div>
-        <div class="display-text">
-          <h2>PROJECT2</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
-        </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/cosmicApe.jpg"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
-      </div>
-      <div class="display" id="project3">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="Ape"
-                src="../img/renders/low quality/kraken1.jpg"
-                data-src="../img/renders/high quality/kraken1.jpg"
-                class="display-image lazy"
-                class="display-image"
-                draggable="false"
-                loading="lazy"
-              />
+        <div class="display" id="bouncyballs">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="bouncy balls"
+                  src="../img/programming/low quality/bouncyballs.jpg"
+                  data-src="../img/programming/high quality/bouncyballs.jpg"
+                  class="display-image lazy"
+                  class="display-image"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
+          <div class="display-text">
+            <h2>BOUNCY BALLS</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
+          </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="https://github.com/oudend/bouncyBalls"
+            rel="noopener"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
         </div>
-        <div class="display-text">
-          <h2>PROJECT3</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
-        </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/kraken1.jpg"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
-      </div>
-      <div class="display" id="project4">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="nightime manor"
-                src="../img/renders/low quality/manor-night.jpg"
-                data-src="../img/renders/high quality/manor-night.jpg"
-                class="display-image lazy"
-                draggable="false"
-                loading="lazy"
-              />
+        <div class="display" id="voxeloctree">
+          <div class="zoomist-container-display noselect">
+            <div class="zoomist-wrapper">
+              <div class="zoomist-image">
+                <img
+                  alt="voxel octree"
+                  src="../img/programming/low quality/voxeloctree.jpg"
+                  data-src="../img/programming/high quality/voxeloctree.jpg"
+                  class="display-image lazy"
+                  class="display-image"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="display-text">
-          <h2>PROJECT4</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
-        </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/manor-night.png"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
-      </div>
-      <div class="display" id="project5">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="Cosmic monkey"
-                src="../img/renders/low quality/cosmicMonkey.jpg"
-                data-src="../img/renders/high quality/cosmicMonkey.jpg"
-                class="display-image lazy"
-                draggable="false"
-              />
-            </div>
+          <div class="display-text">
+            <h2>Voxel Octree</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
+              quasi veritatis distinctio nam neque totam natus repellendus iure
+              hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
+              quos corporis id deserunt nemo recusandae excepturi modi esse est.
+              Ratione nostrum
+            </p>
           </div>
+          <a
+            title="link to project"
+            class="display-link"
+            href="https://github.com/oudend/VoxelBufferOctree"
+            rel="noopener"
+            target="_blank"
+          >
+            <svg
+              width="40"
+              height="40"
+              data-src="../icons/external-link.svg"
+              class="icon display-link-icon"
+            ></svg>
+          </a>
         </div>
-        <div class="display-text">
-          <h2>PROJECT5</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
-        </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/cosmicMonkey.png"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
-      </div>
-      <div class="display" id="project6">
-        <div class="zoomist-container-display noselect">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img
-                alt="Lego Brick"
-                src="../img/renders/low quality/brick.jpg"
-                data-src="../img/renders/high quality/brick.jpg"
-                class="display-image lazy"
-                class="display-image"
-                draggable="false"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="display-text">
-          <h2>PROJECT6</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-            maxime in sapiente, pariatur voluptatibus obcaecati, optio quis
-            quasi veritatis distinctio nam neque totam natus repellendus iure
-            hic sint deserunt possimus dolore voluptate. Ab eaque fuga, veniam
-            quos corporis id deserunt nemo recusandae excepturi modi esse est.
-            Ratione nostrum
-          </p>
-        </div>
-        <a
-          title="link to project"
-          class="display-link"
-          href="../img/renders/high quality/brick.jpg"
-          target="_blank"
-        >
-          <svg
-            width="40"
-            height="40"
-            data-src="../icons/external-link.svg"
-            class="icon display-link-icon"
-          ></svg>
-        </a>
       </div>
     </main>
     <footer>
@@ -577,10 +727,21 @@
           ></svg>
         </div>
         <div id="footer-links">
-          <a href="https://github.com/oudend">Github</a>
-          <a href="https://www.artstation.com/oudend">Artstation</a>
+          <a href="https://github.com/oudend" target="_blank" rel="noopener"
+            >Github</a
+          >
+          <a
+            href="https://www.artstation.com/oudend"
+            target="_blank"
+            rel="noopener"
+            >Artstation</a
+          >
         </div>
-        <div id="footer-contact-info"><span>070-353-15-96</span></div>
+        <div id="footer-contact-info">
+          <span
+            >Copyright &copy; 2024 All Rights Reserved by Martin Terner</span
+          >
+        </div>
       </div>
     </footer>
   </body>

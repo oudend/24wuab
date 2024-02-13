@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="css/components/display.css" />
     <link rel="stylesheet" href="css/components/essentials/footer.css" />
     <link rel="stylesheet" href="css/components/essentials/navbar.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <script defer src="js/libs/svg-loader.min.js" async></script>
     <script defer src="js/libs/lazyload.min.js"></script>
     <script defer src="js/libs/zoomist.umd.js"></script>
@@ -170,7 +170,7 @@
         </div>
       </div>
     </header>
-    <main class="scrollbar-hidden">
+    <main class="scrollbar-hidden display-container">
       <div class="display">
         <div class="zoomist-container-display noselect">
           <div class="zoomist-wrapper">
@@ -293,7 +293,7 @@
     <footer>
       <img
         id="footer-background"
-        src="img/banner/low quality/banner.jpg"
+        src="../img/banner/low quality/banner.jpg"
         alt="ominous face"
       />
       <div id="footer-content">
@@ -303,14 +303,25 @@
             height="30"
             id="github-icon-footer"
             class="icon"
-            data-src="icons/github.svg"
+            data-src="../icons/github.svg"
           ></svg>
         </div>
         <div id="footer-links">
-          <a href="https://github.com/oudend">Github</a>
-          <a href="https://www.artstation.com/oudend">Artstation</a>
+          <a href="https://github.com/oudend" target="_blank" rel="noopener"
+            >Github</a
+          >
+          <a
+            href="https://www.artstation.com/oudend"
+            target="_blank"
+            rel="noopener"
+            >Artstation</a
+          >
         </div>
-        <div id="footer-contact-info"><span>070-353-15-96</span></div>
+        <div id="footer-contact-info">
+          <span
+            >Copyright &copy; 2024 All Rights Reserved by Martin Terner</span
+          >
+        </div>
       </div>
     </footer>
   </body>
