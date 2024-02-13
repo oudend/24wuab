@@ -1,7 +1,6 @@
 const displays = document.querySelectorAll(".display");
 
 for (const display of displays) {
-  console.log(display);
   const displayZoomist = new Zoomist(
     display.querySelector(".zoomist-container-display"),
     {

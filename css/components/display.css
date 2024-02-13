@@ -21,6 +21,20 @@
   transition: ease-in color 100ms, ease-in top 100ms;
 }
 
+.zoomist-container {
+  touch-action: auto;
+  overflow: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.zoomist-container::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 /* .display:hover {
 } */
 

@@ -113,7 +113,7 @@
   /* color: hsl(0, 100%, 50%, 0.5); */
 }
 
-#github-icon {
+.github-icon {
   align-self: end;
   justify-self: right;
   align-self: center;
