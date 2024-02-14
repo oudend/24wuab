@@ -92,3 +92,16 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 }
+
+.lazy {
+  transition: ease blur 700ms, transform 700ms;
+}
+
+.lazy:not(.loaded) {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  transform: scale(1.05);
+}
