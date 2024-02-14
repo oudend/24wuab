@@ -51,10 +51,11 @@
       href="../favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../favicon/site.webmanifest" />
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/libs/zoomist.css" />
+
     <link rel="stylesheet" href="../css/components/essentials/utils.css" />
     <link rel="stylesheet" href="../css/components/project-index.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/libs/zoomist.css" />
     <link rel="stylesheet" href="../css/components/banner.css" />
     <link rel="stylesheet" href="../css/components/display.css" />
     <link rel="stylesheet" href="../css/components/project-label.css" />
@@ -65,7 +66,7 @@
     <script defer src="../js/libs/lazyload.min.js"></script>
     <script defer src="../js/libs/zoomist.umd.js"></script>
     <script defer src="../js/libs/ambient.min.js"></script>
-    <script src="../js/libs/anime.min.js"></script>
+    <script defer src="../js/libs/anime.min.js"></script>
     <script defer src="../js/components/essentials/menu.js"></script>
     <script defer src="../js/components/essentials/navbar.js"></script>
     <script defer src="../js/components/banner.js"></script>
@@ -516,6 +517,7 @@
                   src="../img/renders/low quality/cosmicMonkey.jpg"
                   data-src="../img/renders/high quality/cosmicMonkey.jpg"
                   class="display-image lazy"
+                  loading="lazy"
                   draggable="false"
                 />
               </div>
@@ -724,6 +726,7 @@
         id="footer-background"
         src="../img/banner/low quality/banner.jpg"
         alt="ominous face"
+        loading="lazy"
       />
       <div id="footer-content">
         <div id="footer-icons">

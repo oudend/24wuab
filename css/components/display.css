@@ -47,14 +47,14 @@
   font-family: var(--subtitle-font-family);
   margin: 0;
   align-self: center;
-  font-size: var(--font-size);
+  font-size: max(12px, var(--font-size));
 }
 
 .display-text > p {
   font-family: var(--paragraph-font-family);
   text-align: justify;
   /* text-justify: inter-word; */
-  font-size: calc(var(--font-size) / 4);
+  font-size: max(12px, calc(var(--font-size) / 4));
 }
 
 .display:hover > .display-text > h2 {
@@ -120,7 +120,7 @@
   }
 
   .display-container .zoomist-image {
-    height: 234px;
+    height: 700px;
   }
 }
 
@@ -138,38 +138,38 @@
 
 @media only screen and (min-width: 350px) {
   .display:hover > .display-text > h2 {
-    font-size: calc(var(--font-size) * 0.9);
+    font-size: max(12px, calc(var(--font-size) * 0.9));
   }
 
   .display:hover > .display-text > p {
-    font-size: calc(var(--font-size) * 0.3);
+    font-size: max(12px, calc(var(--font-size) * 0.3));
   }
 }
 @media only screen and (min-width: 400px) {
   .display:hover > .display-text > h2 {
-    font-size: calc(var(--font-size) * 1.1);
+    font-size: max(12px, calc(var(--font-size) * 1.1));
   }
 
   .display:hover > .display-text > p {
-    font-size: calc(var(--font-size) * 0.4);
+    font-size: max(12px, calc(var(--font-size) * 0.4));
   }
 }
 @media only screen and (min-width: 640px) {
   .display:hover > .display-text > h2 {
-    font-size: calc(var(--font-size) * 1);
+    font-size: max(12px, calc(var(--font-size) * 1));
   }
 
   .display:hover > .display-text > p {
-    font-size: calc(var(--font-size) * 0.3);
+    font-size: max(12px, calc(var(--font-size) * 0.3));
   }
 }
 @media only screen and (min-width: 1000px) {
   .display:hover > .display-text > h2 {
-    font-size: calc(var(--font-size) * 1);
+    font-size: max(12px, calc(var(--font-size) * 1));
   }
 
   .display:hover > .display-text > p {
-    font-size: calc(var(--font-size) * 0.3);
+    font-size: max(12px, calc(var(--font-size) * 0.3));
   }
 }
 @media only screen and (min-width: 1300px) {

@@ -2,7 +2,7 @@
   color: white;
   padding-left: 30%;
 
-  transition: padding-left 1000ms;
+  /* transition: padding-left 1000ms; */
 }
 
 #project-index > h2 {
@@ -43,14 +43,15 @@
 }
 
 #project-index > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding-left: 0px;
   list-style-type: none;
 }
 
 #project-index > ol > li {
   list-style-type: none;
-  /* transition: background-color 1000ms; */
-  transition: ease background-color 400ms;
 }
 #project-index > ol > li > a:hover {
   color: hsl(var(--primary));
@@ -89,11 +90,11 @@
   }
 
   #project-index > ol {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     align-content: center;
     justify-content: center;
+    gap: 0px;
+
     /* gap: 1px; */
     /* height: 100px; */
   }
