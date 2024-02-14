@@ -2,9 +2,10 @@ body,
 html {
   margin: 0;
   overflow: scroll;
-  background: hsl(var(--background));
+  background-color: hsl(var(--background));
   max-width: 100%;
   overflow-x: hidden;
+  transition: background-color 200ms, color 200ms;
 }
 
 @font-face {

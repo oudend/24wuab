@@ -1,0 +1,5 @@
+.project-label {
+  color: hsl(var(--foreground));
+  text-align: center;
+  font-family: var(--subtitle-font-family);
+}

@@ -6,10 +6,21 @@ const themeButtons = document.querySelectorAll(".theme-button");
 var theme = "light";
 
 for (const themeButton of themeButtons) {
+  if (localStorage.getItem("theme") === "dark") {
+    themeButton.classList.toggle("light");
+    theme = "dark";
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme")
+    );
+  }
+
   themeButton.addEventListener("click", () => {
     themeButton.classList.toggle("light");
 
     theme = theme === "light" ? "dark" : "light";
+
+    localStorage.setItem("theme", theme);
 
     document.documentElement.setAttribute("data-theme", theme);
   });
