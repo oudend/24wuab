@@ -6,6 +6,7 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   transition: background-color 200ms, color 200ms;
+  padding-left: calc(100vw - 100%);
 }
 
 @font-face {
@@ -93,8 +94,28 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
-.lazy {
-  transition: ease blur 700ms, transform 700ms;
+.lazy.lazy {
+  /* transition: ease filter 1500ms, transform 700ms; */
+  --filter-transition-duration: 600ms;
+  --transform-transition-duration: 600ms;
+  -webkit-transition: var(--filter-transition-duration) -webkit-filter linear,
+    transform var(--transform-transition-duration);
+  -moz-transition: var(--filter-transition-duration) -moz-filter linear,
+    transform var(--transform-transition-duration);
+  -moz-transition: var(--filter-transition-duration) filter linear,
+    transform var(--transform-transition-duration);
+  -ms-transition: var(--filter-transition-duration) -ms-filter linear,
+    transform var(--transform-transition-duration);
+  -o-transition: var(--filter-transition-duration) -o-filter linear,
+    transform var(--transform-transition-duration);
+  transition: var(--filter-transition-duration) filter linear,
+    var(--filter-transition-duration) -webkit-filter linear,
+    transform var(--transform-transition-duration);
+}
+
+.lazy.entered {
+  --filter-transition-duration: 600ms;
+  --transform-transition-duration: 600ms;
 }
 
 .lazy:not(.loaded) {
@@ -103,5 +124,5 @@ html {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }

@@ -18,6 +18,10 @@ var fixed = false;
 window.addEventListener("scroll", onScroll);
 
 function onScroll(e) {
+  if (banner.classList.contains("loaded")) {
+    banner.style.setProperty("--filter-transition-duration", "0ms");
+  }
+
   const yOffset = window.pageYOffset || document.documentElement.scrollTop;
 
   if (yOffset > window.innerHeight) return;

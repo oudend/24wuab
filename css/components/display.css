@@ -39,7 +39,7 @@
 } */
 
 .display:hover > .display-text {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary-dark));
   top: 50%;
 }
 
