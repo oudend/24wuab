@@ -1,0 +1,21 @@
+.imgInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgInfo > p {
+  font-family: var(--paragraph-font-family);
+  color: hsl(var(--foreground));
+}
+.imgInfo > img {
+  width: 40%;
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 640px) {
+  .imgInfo > img {
+    display: none;
+  }
+}

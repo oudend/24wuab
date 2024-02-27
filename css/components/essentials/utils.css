@@ -126,3 +126,12 @@ html {
   filter: blur(5px);
   transform: scale(1.1);
 }
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+}

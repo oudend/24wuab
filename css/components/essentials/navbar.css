@@ -202,11 +202,12 @@
   display: grid;
 
   grid-template-rows: 50px 1fr;
-  background: linear-gradient(
+  /* background: linear-gradient(
     270deg,
     hsl(var(--primary) / 0.3),
     hsl(var(--primary-dark))
-  );
+  ); */
+  background: hsla(var(--primary));
   /* background: transparent; */
   /* filter: blur(1px); */
   position: fixed;
