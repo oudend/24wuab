@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="oudend's portfolio: about me" />
+    <meta name="title" content="oudend's portfolio: platforms" />
     <meta name="description" content="oudends portfolio website" />
     <meta
       name="keywords"
-      content="oudend, Martin Terner, portfolio, about me"
+      content="oudend, Martin Terner, portfolio, platforms"
     />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
@@ -56,11 +56,10 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/libs/zoomist.css" />
     <link rel="stylesheet" href="../css/components/banner.css" />
-    <link rel="stylesheet" href="../css/components/emailPrompt.css" />
-    <link rel="stylesheet" href="../css/components/imgInfo.css" />
+    <link rel="stylesheet" href="../css/components/display.css" />
+    <link rel="stylesheet" href="../css/components/main.css" />
     <link rel="stylesheet" href="../css/components/essentials/footer.css" />
     <link rel="stylesheet" href="../css/components/essentials/navbar.css" />
-    <!-- <link rel="stylesheet" href="../css/components/project-label.css" /> -->
     <script defer src="../js/libs/svg-loader.min.js" async></script>
     <script defer src="../js/libs/lazyload.min.js"></script>
     <script defer src="../js/libs/zoomist.umd.js"></script>
@@ -69,6 +68,8 @@
     <script defer src="../js/components/essentials/menu.js"></script>
     <script defer src="../js/components/essentials/navbar.js"></script>
     <script defer src="../js/components/banner.js"></script>
+    <script defer src="../js/components/display.js"></script>
+
     <script defer src="../js/index.js"></script>
     <title>Portfolio</title>
   </head>
@@ -89,15 +90,18 @@
             <a href="../index.html" title="home">Home</a>
           </li>
           <li>
-            <a href="./platforms.html" title="platforms">platforms</a>
+            <a
+              href="./platforms.html"
+              title="platforms"
+              class="active-nav-header"
+              >platforms</a
+            >
           </li>
           <li>
             <a href="./projects.html" title="projects">Projects</a>
           </li>
           <li>
-            <a href="./aboutMe.html" title="about me" class="active-nav-header"
-              >About me</a
-            >
+            <a href="./aboutMe.html" title="about me">About me</a>
           </li>
         </ul>
 
@@ -152,18 +156,18 @@
               <a href="../index.html" title="home">Home</a>
             </li>
             <li>
-              <a href="./platforms.html" title="platforms">platforms</a>
+              <a
+                href="./platforms.html"
+                title="platforms"
+                class="active-nav-header"
+                >platforms</a
+              >
             </li>
             <li>
               <a href="./projects.html" title="projects">Projects</a>
             </li>
             <li>
-              <a
-                href="./aboutMe.html"
-                title="about me"
-                class="active-nav-header"
-                >About me</a
-              >
+              <a href="./aboutMe.html" title="about me">About me</a>
             </li>
           </ul>
         </div>
@@ -185,48 +189,113 @@
           </div>
         </div>
         <div id="banner-text-container">
-          <h1>ABOUT ME</h1>
+          <h1>PLATFORMS</h1>
+          <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
     </header>
-    <main class="scrollbar-hidden">
-      <div class="imgInfo">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas
-          exercitationem reprehenderit earum ad sit porro commodi quod ex
-          magnam, perspiciatis assumenda eveniet sunt est ut quis similique
-          velit ducimus iste. Vitae incidunt deserunt quaerat enim, quisquam rem
-          consequatur nam asperiores! Praesentium qui voluptates porro est
-          tempora, nesciunt labore earum eaque doloremque deleniti, dolor,
-          voluptate totam neque et similique ipsa quia quasi quae quidem
-          possimus consectetur esse odit fugiat repellendus! Tenetur reiciendis
-          maiores vel tempora possimus aliquid asperiores qui eaque voluptatem
-          libero quod laborum, enim commodi quo illum doloremque eveniet, unde
-          atque quos et temporibus labore. Adipisci in nobis molestias.
-        </p>
-        <img
-          alt="Brick"
-          src="../img/profile/low quality/profile.jpg"
-          data-src="../img/profile/high quality/profile.jpg"
-          class="display-image lazy"
-          draggable="false"
-          loading="lazy"
-        />
+    <main class="scrollbar-hidden display-container">
+      <div class="display" id="github-platform">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/cosmicApe.jpg"
+                data-src="../img/renders/high quality/cosmicApe.jpg"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>GITHUB</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            maxime
+          </p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/cosmicApe.jpg"
+          target="_blank"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/github.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
       </div>
-
-      <div class="emailPrompt">
-        <h2>Email me</h2>
-        <h3>ternermartin@gmail.com</h3>
-        <form>
-          <input placeholder="from:" type="text" id="from" name="from" />
-          <textarea
-            name="message"
-            placeholder="message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </form>
+      <div class="display" id="artstation-platform">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/cosmicApe.jpg"
+                data-src="../img/renders/high quality/cosmicApe.jpg"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>LINKEDIN</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/cosmicApe.jpg"
+          target="_blank"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/github.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
+      </div>
+      <div class="display" id="reddit-platform">
+        <div class="zoomist-container-display noselect">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img
+                alt="Ape"
+                src="../img/renders/low quality/cosmicApe.jpg"
+                data-src="../img/renders/high quality/cosmicApe.jpg"
+                class="display-image lazy"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="display-text">
+          <h2>TWITTER</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+        <a
+          title="link to project"
+          class="display-link"
+          href="../img/renders/high quality/cosmicApe.jpg"
+          target="_blank"
+        >
+          <svg
+            width="40"
+            height="40"
+            data-src="../icons/github.svg"
+            class="icon display-link-icon"
+          ></svg>
+        </a>
       </div>
     </main>
     <footer>
