@@ -1,0 +1,4 @@
+.platform-display .display-image {
+  object-fit: cover;
+  filter: brightness(50%) blur(5px);
+}
