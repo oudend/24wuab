@@ -18,7 +18,7 @@
   width: 60%;
   transform: translateX(-50%) translateY(-50%);
   --font-size: 2em;
-  transition: ease-in color 100ms, ease-in top 100ms;
+  transition: ease-in color 500ms, ease-in top 100ms;
 }
 
 .zoomist-container {
@@ -68,7 +68,7 @@
 }
 
 .display:hover .display-image {
-  filter: brightness(100%);
+  filter: brightness(80%);
 }
 
 .display-image {
