@@ -68,11 +68,12 @@
 }
 
 .display:hover .display-image {
-  filter: brightness(20%);
+  filter: brightness(100%);
 }
 
 .display-image {
   object-fit: cover;
+  filter: brightness(50%);
   /* width: 100%; */
   /* height: inherit; */
   height: 100%;
