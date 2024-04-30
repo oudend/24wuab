@@ -6,6 +6,7 @@
 .imgInfo > p {
   font-family: var(--paragraph-font-family);
   color: hsl(var(--foreground));
+  font-size: var(--font-size-small);
 }
 .imgInfo > img {
   width: 40%;

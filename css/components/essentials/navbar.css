@@ -64,7 +64,7 @@
 
 .nav-headers > li > a {
   font-family: var(--subtitle-font-family);
-  font-size: 1.5em;
+  font-size: var(--font-size-medium);
   color: hsl(var(--accent-foreground));
   overflow: hidden;
   white-space: nowrap;
@@ -233,7 +233,7 @@
   /* transition: width 100ms, opacity 1000ms; */
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
   #menu-button {
     width: unset;
     opacity: 1;

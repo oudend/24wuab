@@ -9,6 +9,10 @@
   padding-bottom: 10px;
 }
 
+.emailPrompt > h2 {
+  font-size: var(--font-size-medium);
+}
+
 .emailPrompt > h2,
 .emailPrompt > h3 {
   font-family: var(--subtitle-font-family);
@@ -17,7 +21,7 @@
 }
 
 .emailPrompt > h3 {
-  font-size: small;
+  font-size: var(--font-size-small);
 }
 
 .emailPrompt > form {
@@ -33,6 +37,7 @@
 .emailPrompt > form > input,
 .emailPrompt > form > textarea {
   border: 2px solid hsl(var(--foreground));
+  font-size: var(--font-size-small);
   font-family: var(--paragraph-font-family);
 }
 

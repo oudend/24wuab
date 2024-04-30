@@ -59,7 +59,12 @@ html {
 :root {
   --title-font-family: "Nunito", Fallback, sans-serif;
   --subtitle-font-family: "Cataraman", Fallback, sans-serif;
-  --paragraph-font-family: "Maitree", Fallback, sans-serif;
+  --paragraph-font-family: "Nunito"; /*"Maitree", Fallback, sans-serif;*/
+
+  --font-size-big: 4em;
+  --font-size-medium: 2.47em;
+  --font-size-small: 0.763em;
+  /* --font-size-xsmall: calc(var(--font-size-small) / 1.618em); */
 }
 
 .zoomist-image {

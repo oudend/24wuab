@@ -56,7 +56,7 @@ footer {
 }
 
 #footer-links > a {
-  font-size: 2em;
+  font-size: var(--font-size-medium);
   /* color: hsl(var(--popover-foreground)); */
   color: inherit;
 }
@@ -74,6 +74,7 @@ footer {
   left: 0;
   overflow: hidden;
   white-space: nowrap;
+  font-size: var(--font-size-small);
 }
 
 #github-icon-footer {
